@@ -1,16 +1,16 @@
-<header class="text-gray-400 bg-gray-900 body-font">
-  <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-    <a href="#" class="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-white-900 lg:items-center lg:justify-center mb-4 md:mb-0">
-  <img src="https://media0.giphy.com/media/1QcqLUCuQca1edQ0rK/200w.gif?cid=6c09b952obiukpxmw9e4afgiheeexc7ri8gq1qwxzkhucy8e&ep=v1_gifs_search&rid=200w.gif&ct=s" height="50px" width="50px">
-      <span class="ml-3 text-xl text-black-500">Gamat Kapampangan</span>
+<header class="text-gray-400 bg-white body-font">
+  <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center justify-center">
+    <a href="#" routerLinkActive="active" class="text-black hover:text-white-900 title-font font-medium items-center mb-4 md:mb-0">
+      <span class="title-text text-xl xl:block lg:hidden">GAMAT KAPAMPANGAN</span>
+      <nav class="flex flex-wrap items-center text-base justify-center">
+        <a routerLink="/artists" routerLinkActive="active" class="mr-5 ml-5 hover:text-white-900">Artists</a>
+        <a routerLink="/events" routerLinkActive="active" class="mr-5 ml-5 hover:text-white-900">Events</a>
+        <a routerLink="/about" routerLinkActive="active" class="mr-5 ml-5 hover:text-white-900">About</a>
+        <a routerLink="/contact" routerLinkActive="active" class="mr-5 ml-5 hover:text-white-900">Contact</a>
+      </nav>
     </a>
-    <nav class="flex lg:w-2/5 flex-wrap items-center text-base md:ml-auto">
-      <a routerLink="/artists" routerLinkActive="active" class="mr-5 hover:text-white-900">Artists</a>
-      <a routerLink="/events" routerLinkActive="active" class="mr-5 hover:text-gray-900">Events</a>
-      <a routerLink="/about" routerLinkActive="active" class="mr-5 hover:text-gray-900">About</a>
-      <a routerLink="/contact" routerLinkActive="active" class="mr-5 hover:text-gray-900">Contact</a>
-    </nav>
   </div>
 </header>
 
+<app-home></app-home>
 <router-outlet></router-outlet>
