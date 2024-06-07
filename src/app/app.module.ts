@@ -11,6 +11,12 @@ import { ContactComponent } from './contact/contact.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 import {MatDividerModule} from '@angular/material/divider';
+import { NavbarComponent } from './navbar/navbar.component';
+import { BiocolComponent } from './artists/biocol/biocol.component';
+
+import {MatButtonModule} from '@angular/material/button';
+import {MatCardModule} from '@angular/material/card';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -19,12 +25,17 @@ import {MatDividerModule} from '@angular/material/divider';
     ArtistsComponent,
     EventsComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    NavbarComponent,
+    BiocolComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MatDividerModule
+    MatDividerModule,
+    MatButtonModule,
+    MatCardModule,
   ],
   providers: [
     provideAnimationsAsync()
