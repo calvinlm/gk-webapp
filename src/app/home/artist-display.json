@@ -1,0 +1,37 @@
+[
+    {
+      "id": 0,
+      "name": "John Doe",
+      "title": "Ethereal Visions",
+      "price": 1500,
+      "photo": "https://dummyimage.com/600x400/000/fff"
+    },
+    {
+      "id": 1,
+      "name": "Jane Smith",
+      "title": "Sunset Bliss",
+      "price": 2000,
+      "photo": "https://dummyimage.com/600x400/000/fff"
+    },
+    {
+      "id": 2,
+      "name": "Michael Johnson",
+      "title": "Dreamscapes",
+      "price": 1800,
+      "photo": "https://dummyimage.com/600x400/00g0/fff"
+    },
+    {
+      "id": 3,
+      "name": "Emily White",
+      "title": "Serene Lines",
+      "price": 1200,
+      "photo": "https://dummyimage.com/600x400/000/fff"
+    },
+    {
+      "id": 4,
+      "name": "David Lee",
+      "title": "Silent Gaze",
+      "price": 2500,
+      "photo": "https://dummyimage.com/600x400/000/fff"
+    }
+  ]

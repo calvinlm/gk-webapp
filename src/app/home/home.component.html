@@ -19,49 +19,29 @@
     </div>
 </section>
 
-<section class="text-gray-400 body-font bg-white h-screen flex justify-center items-center">
-    <div class="container px-5 py-24 mx-auto">
-      <div class="flex flex-wrap justify-center w-full mb-20">
-        <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
-          <h1 class="sm:text-5xl text-4xl font-medium title-font mb-2 text-black text-center">DISPLAY</h1>
-        </div>
-      </div>
-      <div class="flex flex-wrap -m-4 justify-center">
-        <div class="xl:w-1/4 md:w-1/2 p-4">
-          <div class="bg-gray-800 bg-opacity-40 p-6 rounded-lg">
-            <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/720x400" alt="content">
-            <h3 class="tracking-widest text-black-400 text-xs font-medium title-font text-black">SUBTITLE</h3>
-            <h2 class="text-lg text-black font-medium title-font mb-4">Chichen Itza</h2>
-            <p class="leading-relaxed text-base text-black">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
-          </div>
-        </div>
-        <div class="xl:w-1/4 md:w-1/2 p-4">
-          <div class="bg-gray-800 bg-opacity-40 p-6 rounded-lg">
-            <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/720x400" alt="content">
-            <h3 class="tracking-widest text-black-400 text-xs font-medium title-font text-black">SUBTITLE</h3>
-            <h2 class="text-lg text-black font-medium title-font mb-4">Chichen Itza</h2>
-            <p class="leading-relaxed text-base text-black">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
-          </div>
-        </div>
-        <div class="xl:w-1/4 md:w-1/2 p-4">
-          <div class="bg-gray-800 bg-opacity-40 p-6 rounded-lg">
-            <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/720x400" alt="content">
-            <h3 class="tracking-widest text-black-400 text-xs font-medium title-font text-black">SUBTITLE</h3>
-            <h2 class="text-lg text-black font-medium title-font mb-4">Chichen Itza</h2>
-            <p class="leading-relaxed text-base text-black">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
-          </div>
-        </div>
-        <div class="xl:w-1/4 md:w-1/2 p-4">
-          <div class="bg-gray-800 bg-opacity-40 p-6 rounded-lg">
-            <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/720x400" alt="content">
-            <h3 class="tracking-widest text-black-400 text-xs font-medium title-font text-black">SUBTITLE</h3>
-            <h2 class="text-lg text-black font-medium title-font mb-4">Chichen Itza</h2>
-            <p class="leading-relaxed text-base text-black">Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.</p>
-          </div>
-        </div>
+<section class="text-gray-400 body-font bg-white h-screen flex justify-center items-center custom-margin">
+  <div class="container px-5 py-24 mx-auto mb-5">
+    <div class="flex flex-wrap justify-center w-full mb-20">
+      <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+        <h1 class="sm:text-5xl text-4xl font-medium title-font mb-2 text-black text-center">DISPLAY</h1>
       </div>
     </div>
-  </section>
+    <div class="flex flex-wrap -m-4 justify-center">
+      <div class="xl:w-1/4 md:w-1/2 p-4" *ngFor="let artistdisplay of artistdisplays">
+        <mat-card>
+          <img mat-card-image [src]="artistdisplay.photo" alt="{{ artistdisplay.name }}">
+          <mat-card-content>
+            <h2>{{ artistdisplay.name }}</h2>
+            <h4>{{ artistdisplay.title }}</h4>
+            <p>Price: {{ artistdisplay.price}}</p>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 
   <section class="text-gray-400 bg-white body-font overflow-hidden">
     <div class="container px-5 py-24 mx-auto">
